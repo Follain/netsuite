@@ -10,7 +10,7 @@ module NetSuite
       actions :get, :get_list, :add, :initialize, :delete, :update, :upsert, :search
 
       fields :currency_name, :due_date, :email, :exchange_rate,
-             :fax, :fob, :interco_status, :interco_transaction
+             :fax, :fob, :interco_status, :interco_transaction,
              :linked_tracking_numbers, :memo, :message, :other_ref_num, :ship_date,
              :ship_is_residential, :ship_to, :source, :status, :sub_total, :supervisor_approval,
              :tax2_total, :tax_total, :to_be_emailed, :to_be_faxed, :to_be_printed,
