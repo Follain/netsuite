@@ -16,6 +16,8 @@ module NetSuite
              :tax2_total, :tax_total, :to_be_emailed, :to_be_faxed, :to_be_printed,
              :total, :tracking_numbers, :tran_date, :tran_id, :vat_reg_num
 
+      read_only_fields  :created_date
+
       field :billing_address,   Address
       field :shipping_address,  Address
       field :custom_field_list, CustomFieldList
