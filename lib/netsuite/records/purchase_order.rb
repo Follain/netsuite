@@ -9,14 +9,14 @@ module NetSuite
 
       actions :get, :get_list, :add, :initialize, :delete, :update, :upsert, :search
 
-      fields :created_date, :currency_name, :due_date, :email, :exchange_rate,
-             :fax, :fob, :interco_status, :interco_transaction, :last_modified_date,
+      fields :currency_name, :due_date, :email, :exchange_rate,
+             :fax, :fob, :interco_status, :interco_transaction
              :linked_tracking_numbers, :memo, :message, :other_ref_num, :ship_date,
              :ship_is_residential, :ship_to, :source, :status, :sub_total, :supervisor_approval,
              :tax2_total, :tax_total, :to_be_emailed, :to_be_faxed, :to_be_printed,
              :total, :tracking_numbers, :tran_date, :tran_id, :vat_reg_num
 
-      read_only_fields  :created_date
+      read_only_fields  :created_date,:last_modified_date
 
       field :billing_address,   Address
       field :shipping_address,  Address

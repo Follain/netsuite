@@ -24,11 +24,11 @@ module NetSuite
 
       fields :auto_lead_time, :auto_preferred_stock_level, :auto_reorder_point, :available_to_partners, :average_cost,
         :copy_description, :cost, :cost_estimate, :cost_estimate_type, :cost_estimate_units, :cost_units, :costing_method,
-        :costing_method_display, :country_of_manufacture, :created_date, :currency, :date_converted_to_inv,
+        :costing_method_display, :country_of_manufacture, :currency, :date_converted_to_inv,
         :default_return_cost, :demand_modifier, :display_name, :dont_show_price, :enforce_min_qty_internally,
         :exclude_from_sitemap, :featured_description, :fixed_lot_size, :handling_cost, :handling_cost_units, :include_children,
         :is_donation_item, :is_drop_ship_item, :is_gco_compliant, :is_inactive, :is_online, :is_special_order_item, :is_taxable,
-        :item_id, :last_modified_date, :last_purchase_price, :lead_time, :manufacturer, :manufacturer_addr1, :manufacturer_city,
+        :item_id,:last_purchase_price, :lead_time, :manufacturer, :manufacturer_addr1, :manufacturer_city,
         :manufacturer_state, :manufacturer_tariff, :manufacturer_tax_id, :manufacturer_zip, :match_bill_to_receipt,
         :matrix_type, :max_donation_amount, :meta_tag_html, :minimum_quantity, :minimum_quantity_units, :mpn,
         :mult_manufacture_addr, :nex_tag_category, :no_price_message, :offer_support, :on_hand_value_mli, :on_special,
@@ -45,6 +45,8 @@ module NetSuite
         :total_value, :track_landed_cost, :transfer_price, :upc_code, :url_component, :use_bins, :use_marginal_rates,
         :vendor_name, :vsoe_deferral, :vsoe_delivered, :vsoe_permit_discount, :vsoe_price, :weight, :weight_unit, :weight_units
 
+      read_only_fields :created_date, :last_modified_date
+      
       record_refs :alternate_demand_source_item, :asset_account, :bill_exch_rate_variance_acct, :bill_price_variance_acct,
         :bill_qty_variance_acct, :billing_schedule, :cogs_account, :cost_category, :custom_form, :deferred_revenue_account,
         :demand_source, :department, :expense_account, :gain_loss_account, :income_account, :issue_product, :klass, :location,
